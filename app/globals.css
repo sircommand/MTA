@@ -1,0 +1,19 @@
+
+:root{ --bg:#0f1720; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4;}
+html,body,#__next{height:100%}
+body { margin:0; font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#e6eef6; direction:rtl;}
+.container{ max-width:1100px; margin:0 auto; padding:24px;}
+.nav{ display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px; background:linear-gradient(90deg,#071226, #0b1624); border-radius:10px;}
+.menu{ list-style:none; display:flex; gap:14px; margin:0; padding:0;}
+.menu a{ text-decoration:none; color:inherit; padding:8px 12px; border-radius:8px;}
+.hero{ background:linear-gradient(180deg, rgba(255,255,255,0.03), transparent); padding:28px; border-radius:12px; margin-top:16px;}
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px;}
+.card{ background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(2,6,23,0.7);}
+.server .btn, .btn { margin-top:12px; padding:8px 12px; border-radius:8px; cursor:pointer; background:transparent; border:1px solid var(--accent); color:var(--accent);}
+.filters{ display:flex; gap:8px; align-items:center; margin-top:12px; flex-wrap:wrap;}
+.filters input, .filters select{ padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:transparent; color:inherit;}
+.auth{ display:flex; flex-direction:column; gap:10px; max-width:360px;}
+.auth input{ padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:transparent; color:inherit;}
+.footer{ text-align:center; padding:18px; margin-top:28px; background:transparent;}
+.error{ color:#ff6b6b; }
+@media (max-width:700px){ .menu{ display:none } .gallery-grid{ grid-template-columns:repeat(2,1fr);} }
