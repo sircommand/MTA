@@ -1,5 +1,5 @@
 
-import './globals.css'
+import './test.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
